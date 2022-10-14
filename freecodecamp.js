@@ -17,3 +17,36 @@ function processArg(num) {
   return (num + 3) / 5;
 }
 processed = processArg(7);
+
+// Comparisons with the Logical And Operator
+function testLogicalAnd(val) {
+     if (val >= 25 && val <= 50){
+        return "Yes";
+      }
+    return "No";
+  }
+
+//Introducing Else Statements
+  function testElse(val) {
+    let result = "";
+    if (val > 5) {
+      result = "Bigger than 5";
+    }
+    else {
+      result = "5 or Smaller";
+    }
+    return result;
+  }
+
+  //Introducing Else If Statements
+  function testElseIf(val) {
+    if (val > 10) {
+      return "Greater than 10";
+    }
+    else if (val < 5) {
+      return "Smaller than 5";
+    }
+  else {
+    return "Between 5 and 10";
+  }
+  }
