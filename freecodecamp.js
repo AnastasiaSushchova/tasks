@@ -222,3 +222,21 @@ const testObj = {
 };
 const hatValue = testObj.hat;      
 const shirtValue = testObj.shirt;    
+
+//Accessing Object Properties with Bracket Notation
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+const entreeValue = testObj["an entree"];  
+const drinkValue = testObj["the drink"];   
+
+//Accessing Object Properties with Variables
+const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+const playerNumber = 16; 
+const player = testObj[playerNumber];
