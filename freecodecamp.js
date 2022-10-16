@@ -204,3 +204,21 @@ if (count > 0){
   return count + " Hold";
 }
 }
+
+
+//Build JavaScript Objects
+const myDog = {
+name: "Bybi",
+legs: 5,
+tails: 8,
+friends: ["Aser", "Cheat", "Boo"]
+};
+
+//Accessing Object Properties with Dot Notation
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+const hatValue = testObj.hat;      
+const shirtValue = testObj.shirt;    
