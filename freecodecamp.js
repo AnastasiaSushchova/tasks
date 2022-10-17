@@ -285,3 +285,51 @@ function phoneticLookup(val) {
   result = lookup[val]
   return result;
 }
+
+//Testing Objects for Properties 
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)){
+  return obj[checkProp];
+  } else{
+    return "Not Found";
+  }
+}
+
+//Manipulating Complex Objects
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  {
+    "artist": "Rihana",
+    "title": "Moon Light",
+    "release_year": 2005,
+    "formats": [
+      "DVD",
+      "CD"
+    ]
+  }
+];
+
+//Accessing Nested Objects
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
