@@ -364,10 +364,10 @@ function updateRecords(records, id, prop, value) {
 
 //Iterate with JavaScript While Loops
 const myArray0 = [];
-let i = 5;
-while (i >= 0) {
+let u = 5;
+while (u >= 0) {
   myArray0.push(i);
-  i--;
+  u--;
 }
 
 // Iterate with JavaScript For Loops
@@ -381,3 +381,28 @@ const myArray2 = [];
 for (let i = 1; i < 10; i+= 2) {
   myArray2.push(i);
 }
+
+//Count Backwards With a For Loop
+const myArray3 = [];
+for (let i = 9; i > 0; i -= 2) {
+  myArray3.push(i);
+}
+
+//Nesting For Loops
+function multiplyAll(arr) {
+  let product = 1;
+  for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    product = product * arr[i][j]
+    }
+  }
+  return product;
+}
+
+//Iterate with JavaScript Do...While Loops
+const myArray4 = [];
+let i = 10;
+do {
+  myArray4.push(i);
+  i++
+} while (i < 5);
