@@ -1,6 +1,6 @@
 // Manipulate Arrays With pop()
-const myArray = [["John", 23], ["cat", 2]];
-const removedFromMyArray = myArray.pop();
+const myOldArray = [["John", 23], ["cat", 2]];
+const removedFromMyArray = myOldArray.pop();
 
 // Manipulate Arrays With shift()
 const myShiftArray = [["John", 23], ["dog", 3]];
@@ -205,33 +205,6 @@ if (count > 0){
 }
 }
 
-
-//Build JavaScript Objects
-const myDog = {
-name: "Bybi",
-legs: 5,
-tails: 8,
-friends: ["Aser", "Cheat", "Boo"]
-};
-
-//Accessing Object Properties with Dot Notation
-const testObj = {
-  "hat": "ballcap",
-  "shirt": "jersey",
-  "shoes": "cleats"
-};
-const hatValue = testObj.hat;      
-const shirtValue = testObj.shirt;    
-
-//Accessing Object Properties with Bracket Notation
-const testObj = {
-  "an entree": "hamburger",
-  "my side": "veggies",
-  "the drink": "water"
-};
-const entreeValue = testObj["an entree"];  
-const drinkValue = testObj["the drink"];   
-
 //Accessing Object Properties with Variables
 const testObj = {
   12: "Namath",
@@ -357,7 +330,6 @@ const secondTree = myPlants[1].list[1];
 
 
 //Record Collection
-// Setup
 const recordCollection = {
   2548: {
     albumTitle: 'Slippery When Wet',
@@ -377,8 +349,6 @@ const recordCollection = {
     albumTitle: 'ABBA Gold'
   }
 };
-
-// Only change code below this line
 function updateRecords(records, id, prop, value) {
   if (prop !== "tracks" && value !== "") {
     records[id][prop] = value;
@@ -390,4 +360,24 @@ function updateRecords(records, id, prop, value) {
     delete records[id][prop];
   }
   return records;
+}
+
+//Iterate with JavaScript While Loops
+const myArray0 = [];
+let i = 5;
+while (i >= 0) {
+  myArray0.push(i);
+  i--;
+}
+
+// Iterate with JavaScript For Loops
+const myArray1 = [];
+for (let i = 1; i <= 5; i++) {
+  myArray1.push(i);
+}
+
+//Iterate Odd Numbers With a For Loop
+const myArray2 = [];
+for (let i = 1; i < 10; i+= 2) {
+  myArray2.push(i);
 }
