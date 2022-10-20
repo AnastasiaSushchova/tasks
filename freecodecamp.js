@@ -447,3 +447,10 @@ for (let i = 0; i < contacts.length; i++) {
 }
 return "No such contact"
 } 
+
+function createSecretHolder(secret) {
+  return {
+    getSecret: function() { return secret; },
+    setSecret: function(v) { secret = v; }
+  };
+}
