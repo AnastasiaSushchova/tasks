@@ -453,4 +453,18 @@ function createSecretHolder(secret) {
     getSecret: function() { return secret; },
     setSecret: function(v) { secret = v; }
   };
+} 
+
+//The Coupon Code
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+  return enteredCode === correctCode && Date.parse(expirationDate) >= Date.parse(currentDate)
 }
+
+//Power .bind()
+Function.prototype.bind = function (ctx) {
+  var ret = function() {
+    return ret._fn.call(ctx);
+  };
+  ret._fn = this._fn || this;
+  return ret;
+};
